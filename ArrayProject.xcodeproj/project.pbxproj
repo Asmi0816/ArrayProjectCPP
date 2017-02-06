@@ -6,6 +6,11 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F30B7C431E4907D900AF173B /* ArrayRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F30B7C421E4907D900AF173B /* ArrayRunner.cpp */; };
+		F30B7C461E4907F500AF173B /* ArrayController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F30B7C441E4907F500AF173B /* ArrayController.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		F30B7C361E49067300AF173B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		F30B7C381E49067300AF173B /* ArrayProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ArrayProject; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30B7C421E4907D900AF173B /* ArrayRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArrayRunner.cpp; path = Controller/ArrayRunner.cpp; sourceTree = "<group>"; };
+		F30B7C441E4907F500AF173B /* ArrayController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArrayController.cpp; path = Controller/ArrayController.cpp; sourceTree = "<group>"; };
+		F30B7C451E4907F500AF173B /* ArrayController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ArrayController.hpp; path = Controller/ArrayController.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,9 @@
 		F30B7C3A1E49067300AF173B /* ArrayProject */ = {
 			isa = PBXGroup;
 			children = (
+				F30B7C421E4907D900AF173B /* ArrayRunner.cpp */,
+				F30B7C441E4907F500AF173B /* ArrayController.cpp */,
+				F30B7C451E4907F500AF173B /* ArrayController.hpp */,
 			);
 			path = ArrayProject;
 			sourceTree = "<group>";
@@ -113,6 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30B7C431E4907D900AF173B /* ArrayRunner.cpp in Sources */,
+				F30B7C461E4907F500AF173B /* ArrayController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
