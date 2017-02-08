@@ -10,6 +10,7 @@
 		F30B7C431E4907D900AF173B /* ArrayRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F30B7C421E4907D900AF173B /* ArrayRunner.cpp */; };
 		F30B7C461E4907F500AF173B /* ArrayController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F30B7C441E4907F500AF173B /* ArrayController.cpp */; };
 		F30B7C491E490F0900AF173B /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F30B7C471E490F0900AF173B /* IntNode.cpp */; };
+		F333B4601E4BA93500AE8CB8 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333B45E1E4BA93500AE8CB8 /* IntNodeArray.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		F30B7C451E4907F500AF173B /* ArrayController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ArrayController.hpp; path = Controller/ArrayController.hpp; sourceTree = "<group>"; };
 		F30B7C471E490F0900AF173B /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		F30B7C481E490F0900AF173B /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
+		F333B45E1E4BA93500AE8CB8 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
+		F333B45F1E4BA93500AE8CB8 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			children = (
 				F30B7C471E490F0900AF173B /* IntNode.cpp */,
 				F30B7C481E490F0900AF173B /* IntNode.hpp */,
+				F333B45E1E4BA93500AE8CB8 /* IntNodeArray.cpp */,
+				F333B45F1E4BA93500AE8CB8 /* IntNodeArray.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F30B7C491E490F0900AF173B /* IntNode.cpp in Sources */,
+				F333B4601E4BA93500AE8CB8 /* IntNodeArray.cpp in Sources */,
 				F30B7C431E4907D900AF173B /* ArrayRunner.cpp in Sources */,
 				F30B7C461E4907F500AF173B /* ArrayController.cpp in Sources */,
 			);
@@ -274,6 +280,7 @@
 				F30B7C411E49067300AF173B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
