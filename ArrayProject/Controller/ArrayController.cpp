@@ -8,13 +8,14 @@
 
 #include "ArrayController.hpp"
 #include <iostream>
-#include "../Model/IntNode.hpp"
+#include "../Model/IntNodeArray.hpp"
 using namespace std;
 
 void ArrayController :: start()
 {
     // This is an array
-    /* int intArray[4];
+    /* 
+    int intArray[4];
     intArray[0] = 4;
     intArray[1] = 6;
     intArray[2] = 8;
@@ -50,4 +51,24 @@ ArrayController :: ArrayController()
 void ArrayController :: testIntArray()
 {
     cout << "Testing the array" << endl;
+    
+    IntNodeArray temp = IntNodeArray(3);
+    for(int cute = 0; cute < 3; cute++)
+    {
+        cout << temp.getFromIndex(cute) << " Is at spot  " << cute << endl;
+    }
+    
+    cout << "Testing input" << endl;
+    
+    for(int index = 0; index < 3; index++)
+    {
+        temp.setAtIndex(index, index);
+        
+    }
+    for(int index = 0; index< 3; index++)
+    {
+        cout << temp.getFromIndex(index) << " is at spot " << index << endl;
+    }
 }
+
+
