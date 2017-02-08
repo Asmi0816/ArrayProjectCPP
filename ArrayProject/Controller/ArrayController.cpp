@@ -8,13 +8,13 @@
 
 #include "ArrayController.hpp"
 #include <iostream>
-
+#include "../Model/IntNode.hpp"
 using namespace std;
 
 void ArrayController :: start()
 {
     // This is an array
-    int intArray[4];
+    /* int intArray[4];
     intArray[0] = 4;
     intArray[1] = 6;
     intArray[2] = 8;
@@ -33,4 +33,21 @@ void ArrayController :: start()
     {
     cout << "The value of " << userChoice << " is " << doubleArray[userChoice] << endl;
     }
+    */
+    
+    cout << "Starting the project" << endl;
+    
+    cout << "Switching to the array testing" << endl;
+    testIntArray();
+    cout << "Finished testing" << endl;
+}
+
+ArrayController :: ArrayController()
+{
+    
+}
+
+void ArrayController :: testIntArray()
+{
+    cout << "Testing the array" << endl;
 }

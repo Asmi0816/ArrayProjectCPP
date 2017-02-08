@@ -12,9 +12,10 @@
 class ArrayController
 {
 private:
-    
+    void testIntArray();
     
 public:
+    ArrayController();
     void start();
     
 };
