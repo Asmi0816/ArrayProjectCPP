@@ -24,7 +24,7 @@ public:
      */
     IntNode(int value, IntNode * nextNode);
    
-    //Met6hods
+    //Methods
     int getNodeData();
     IntNode * getNodePointer();
     
