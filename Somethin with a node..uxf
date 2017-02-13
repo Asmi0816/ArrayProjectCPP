@@ -59,4 +59,31 @@ bg=blue</panel_attributes>
 + getSize() : int</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>20</y>
+      <w>350</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Node&lt;Type&gt;
+--
+
+-nodeData : Type
+-nodePointer : Node&lt;Type&gt; *
+
+--
+
++ Node() : init
++ Node(Type value) : init
++ Note(Type data, Node&lt;Type&gt; * pointer) : init
+
++ getNodeData() : Type
++ getNodePointer() : Node&lt;Type&gt; *
++ setNodeData(Type data) : void
++ setNodePointer(Node&lt;Type&gt; * next) : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
