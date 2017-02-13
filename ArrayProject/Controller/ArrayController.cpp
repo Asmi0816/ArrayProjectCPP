@@ -39,13 +39,22 @@ void ArrayController :: start()
     cout << "Starting the project" << endl;
     
     cout << "Switching to the array testing" << endl;
-    testIntArray();
+    testNodes();
     cout << "Finished testing" << endl;
 }
 
 ArrayController :: ArrayController()
 {
-    
+    wordNode = Node<string>("MyStringNode");
+    numberNode = Node<int>();
+}
+
+void ArrayController :: testNodes()
+{
+    cout << "Here is the Node<string>" << endl;
+    cout << wordNode.getNodeData() << endl;
+    cout << "Here is the Node<int>" << endl;
+    cout << numberNode.getNodeData() << endl;
 }
 
 void ArrayController :: testIntArray()

@@ -9,10 +9,18 @@
 #ifndef ArrayController_hpp
 #define ArrayController_hpp
 
+#include "../Model/Node.hpp"
+#include <string>
+
+using namespace std;
+
 class ArrayController
 {
 private:
     void testIntArray();
+    Node<int> numberNode;
+    Node<string> wordNode;
+    void testNodes();
     
 public:
     ArrayController();
