@@ -28,7 +28,7 @@ public:
     Type getNodeData();
     Node<Type> * getNodePointer();
     void setNodeData(Type data);
-    void setNodePointer(Node<Type> * next);
+    void setNodePointer(Node<Type>* pointer);
 
     
 };
@@ -51,32 +51,32 @@ Node<Type> ::Node(Type data)
 }
 
 template<class Type>
-Node<Type> :: Node(Type data, nodePointer<Type> * next)
+Node<Type> :: Node(Type nodeData, Node<Type> * nodePointer)
+{
+    this->nodeData = nodeData;
+    this->nodePointer = nodePointer;
+}
+
+template<class Type>
+void Node<Type> :: setNodeData(Type data)
 {
     this->nodeData = data;
-    this->nodePointer = next;
 }
 
 template<class Type>
-Node<Type> :: setNodeData(int newValue)
-{
-    nodeData = newValue;
-}
-
-template<class Type>
-Node<Type> :: setNodePointer(Node * nodePointer)
+void Node<Type> :: setNodePointer(Node * nodePointer)
 {
     this->nodePointer = nodePointer;
 }
 
 template<class Type>
-Node<Type> :: getNodeData()
+Type Node<Type> :: getNodeData()
 {
     return this->nodeData;
 }
 
 template<class Type>
-Node<Type> :: getNodePointer()
+Node<Type> * Node<Type> :: getNodePointer()
 {
     return this-> nodePointer();
 }
