@@ -45,7 +45,7 @@ void ArrayController :: start()
 
 ArrayController :: ArrayController()
 {
-    wordNode = Node<string>("MyStringNode");
+    wordNode = Node<string>();
     numberNode = Node<int>();
 }
 

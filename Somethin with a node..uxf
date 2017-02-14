@@ -70,8 +70,8 @@ bg=blue</panel_attributes>
     <panel_attributes>Node&lt;Type&gt;
 --
 
--nodeData : Type
--nodePointer : Node&lt;Type&gt; *
+- nodeData : Type
+- nodePointer : Node&lt;Type&gt; *
 
 --
 
