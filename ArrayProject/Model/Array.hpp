@@ -83,4 +83,30 @@ Type Array<Type> :: getFromIndex(int index)
     return value;
 }
 
+template <class Type>
+int Array<Type> :: getSize() const
+{
+    return size;
+}
+
+template <class Type>
+Array<Type> :: ~Array()
+{
+    int count = size;
+    Node<Type> * remove = front;
+    while(front != nullptr)
+    {
+        //Move to next node in array
+        front = front->getNodePointer();
+        cout<< "Moving to the next node. At: " << count << endl;
+        //Delete the front pointer
+        delete remove;
+        cout "Deleting the old front pointer." << endl;
+        //Move deletetothe new front.
+        remove=front;
+        cout << "Moving to new front pointer>" << endl;
+        count--;
+        cout << "Front is at: " << front << " count is: " << count << endl;
+    }
+}
 #endif /* Array_h */
