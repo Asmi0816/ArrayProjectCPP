@@ -78,7 +78,7 @@ Type Node<Type> :: getNodeData()
 template<class Type>
 Node<Type> * Node<Type> :: getNodePointer()
 {
-    return this-> nodePointer();
+    return this -> nodePointer;
 }
 
 

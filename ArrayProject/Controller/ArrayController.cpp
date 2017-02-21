@@ -41,6 +41,8 @@ void ArrayController :: start()
     cout << "Switching to the array testing" << endl;
     testNodes();
     cout << "Finished testing" << endl;
+    testAdvancedFeatures();
+    
 }
 
 ArrayController :: ArrayController()
@@ -78,6 +80,26 @@ void ArrayController :: testIntArray()
     {
         cout << temp.getFromIndex(index) << " is at spot " << index << endl;
     }
+}
+
+void ArrayController :: testAdvancedFeatures()
+{
+    int showDeconstructor = 0;
+    if(showDeconstructor < 1)
+    {
+        Array<string> words = Array<string>(5);
+        cout << "There should be messages about the deconstructor next." << endl;
+    }
+    Array<string> words = Array<string>(4);
+    words.setAtIndex(0, "at 0");
+    words.setAtIndex(3, "in the last spot.");
+    Array<string> copiedWords = Array<string>(words);
+    
+    cout<< "These should match: " << endl;
+    cout<< words.getFromIndex(0) << "Should be the same as " << copiedWords.getFromIndex(0) << endl;
+    
+    copiedWords.setAtIndex(3, "Changed the contents of the copied Array");
+    
 }
 
 
