@@ -111,7 +111,7 @@ Array<Type> :: ~Array()
 }
 
 template <class Type>
-Array<Type> :: Array(const Array<Type> & toBECopied)
+Array<Type> :: Array(const Array<Type> & toBeCopied)
 {
     this->size = toBeCopied.getSize();
     
@@ -119,9 +119,9 @@ Array<Type> :: Array(const Array<Type> & toBECopied)
     this.front = new Node<Type>();
     for(int index = 1; index < size; index++)
     {
-        Node<Type> * temp = new Node<Type();
+        Node<Type> * temp = new Node<Type>();
         temp->setNodePointer(front);
-        front =temp;
+        front = temp;
     }
     
     
@@ -136,7 +136,12 @@ Array<Type> :: Array(const Array<Type> & toBECopied)
     }
     
     
+   
     
-    
+}
+template <class Type>
+Node<Type> * Array<Type> :: Array<Type> :: getFront() const
+{
+    return front;
 }
 #endif /* Array_h */
