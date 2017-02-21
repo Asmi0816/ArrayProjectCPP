@@ -44,55 +44,18 @@ List<Type> :: List()
 }
 
 template <class Type>
-List<Type> :: List(const List<Type> & source)
+void List<Type> :: setAtIndex(int index, Type data)
 {
-    this->size = toBeCopied.getSize();
-    
-    //Builds Data Structures
-    this->front = new Node<Type>();
-    for(int index = 1; index < size; index++)
+    assert(index >= 0 && index < size);
+    Node<Type> * current = front;
+    for(int spot = 0; spot < index; spot++)
     {
-        Node<Type> * temp = new Node<Type>();
-        temp->setNodePointer(front);
-        front = temp;
+        current = current -> getNodePointer();
     }
-    
-    
-    
-    Node<Type> * copyTemp = toBeCopied.getFront();
-    Node<Type> * updated = this->front;
-    for(int index = 0; index < size; index++)
-    {
-        updated -> setNodeData(copyTemp->getNodeData());
-        updated = updated -> getNodePointer();
-        copyTemp = copyTemp -> getNodePointer();
-    }
-    
-    
-    
-    
+    current-> setNodeData(value);
 }
 
-template <class Type>
-List<Type> :: ~List()
-{
-    int count = size;
-    Node<Type> * remove = front;
-    while(front != nullptr)
-    {
-        //Move to next node in array
-        front = front->getNodePointer();
-        cout<< "Moving to the next node. At: " << count << endl;
-        //Delete the front pointer
-        delete remove;
-        cout << "Deleting the old front pointer." << endl;
-        //Move deletetothe new front.
-        remove=front;
-        cout << "Moving to new front pointer>" << endl;
-        count--;
-        cout << "Front is at: " << front << " count is: " << count << endl;
-    }
-}
+
 
 
 
