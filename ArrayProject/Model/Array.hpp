@@ -23,7 +23,14 @@ public:
     array();
     array(int size);
     
+    //Deconstructor
+    ~Array<Type>();
+    //Copy init
+    Array<Type>(const Array<Type> & toBeCopied);
+    
+    //Helper Methods
     void setAtIndex(int index, Type value);
+    Node<Type> * getFront() const;
     Type getFromIndex(int index);
     int getSize();
     
