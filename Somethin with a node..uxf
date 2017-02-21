@@ -83,7 +83,7 @@ bg=blue</panel_attributes>
 + getNodePointer() : Node&lt;Type&gt; *
 + setNodeData(Type data) : void
 + setNodePointer(Node&lt;Type&gt; * next) : void
-</panel_attributes>
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -114,7 +114,8 @@ Methods:
 + getFromIndex(int index) : Type
 
 + getSize() : int
-+ getFrontIndex(int index) : Type</panel_attributes>
++ getFrontIndex(int index) : Type
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

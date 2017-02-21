@@ -12,6 +12,7 @@
 #include "Node.hpp"
 #include <iostream>
 #include <assert.h>
+#include "List.hpp"
 
 using namespace std;
 
