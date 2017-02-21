@@ -33,7 +33,7 @@
       <w>140</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>Aricks mege proj
+    <panel_attributes>Aricks mega proj
 
 bg=blue</panel_attributes>
     <additional_attributes/>
@@ -94,19 +94,27 @@ bg=blue</panel_attributes>
       <w>340</w>
       <h>320</h>
     </coordinates>
-    <panel_attributes>Array&lt;Type
+    <panel_attributes>Array&lt;Type&gt;
 --
 - size : int
 - front : Node&lt;Type&gt; *
 
 
 --
+inits:
 + Array() : init
 + Array(int size) : init
 
+advanced:
++ ~Array&lt;Types&gt;() : deconstructor
++ Array&lt;Type&gt;(const Array&lt;Type&gt; &amp; toBeCopied) : copy constructor
+
+Methods:
 + setAtIndex(int index, Type value) : void
 + getFromIndex(int index) : Type
-+ getSize() : int</panel_attributes>
+
++ getSize() : int
++ getFrontIndex(int index) : Type</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
