@@ -102,6 +102,13 @@ void List<Type> :: addAtIndex(int index, Type value)
         Node<Type> * insertNode = new Node<Type>(value);
         Node<Type> * current = front;
         Node<Type> * previous = nullptr;
+        
+        for(int position = 0; position < index; position++)
+        {
+            previous = current;
+            current = current->getNodePointer();
+        }
+        previous->
     }
 }
 
