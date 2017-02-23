@@ -115,6 +115,31 @@ void List<Type> :: addAtIndex(int index, Type value)
     }
 }
 
+template <class Type>
+Type List<Type> :: remove(int index)
+{
+    assert(index >= 0 && index <= size);
+    Type removedData;
+    
+    if(index == 0)
+    {
+        
+    }
+    else if(index ==size)
+    {
+        
+    }
+    else()
+    {
+        
+    }
+    
+    
+    
+    size--;
+    return index;
+    
+}
 
 
 
