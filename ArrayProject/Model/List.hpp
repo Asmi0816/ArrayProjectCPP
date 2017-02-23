@@ -17,6 +17,7 @@ class List
 {
 private:
     int size;
+    Node<Type> * end;
     Node<Type> * front;
     
 public:
@@ -27,9 +28,10 @@ public:
   
     //Helper Methods
     void addAtIndex(int index, Type value);
-    void setAtIndex(int index, Type data);
+    Type setAtIndex(int index, Type data);
     Type getFromIndex(int index);
-    void add(Type value);
+    void addFront(Type value);
+    void addEnd(Type data);
     Type remove(int index);
     Type contains(Type data);
     int getSize() const;
@@ -40,21 +42,68 @@ public:
 template <class Type>
 List<Type> :: List()
 {
-    
+    this->size = 0;
+    this-> front = nullptr;
+    this-> end = nullptr;
 }
 
 template <class Type>
-void List<Type> :: setAtIndex(int index, Type data)
+void List<Type> :: addFront(Type value)
 {
-    assert(index >= 0 && index < size);
-    Node<Type> * current = front;
-    for(int spot = 0; spot < index; spot++)
+    if(size == 0)
     {
-        current = current -> getNodePointer();
+        Node<Type> * first = new Node<Type>(value);
+        this->front = first;
+        this->end = first;
     }
-    current-> setNodeData(value);
+    else
+    {
+        Node<Type> * newFirst = new Node<Type>();
+        newFirst -> setNodeData(value);
+        newFirst -> setNodePointer(front);
+        this->front = newFirst;
+        
+    }
+    size++;
 }
 
+template <class Type>
+void List<Type> :: addEnd(Type data)
+{
+    Node<Type> * added = new Node<Type>(data);
+    if(size == 0)
+    {
+        this->front = added;
+        this->end = added;
+        
+    }
+    else
+    {
+        end->setNodePointer(added);
+        this->end = added;
+    }
+    size++;
+}
+
+template <class Type>
+void List<Type> :: addAtIndex(int index, Type value)
+{
+    assert(index >= 0 && index <= size);
+    if(index == 0)
+    {
+        addFront(value);
+    }
+    else if(index == size)
+    {
+        addEnd(value);
+    }
+    else
+    {
+        Node<Type> * insertNode = new Node<Type>(value);
+        Node<Type> * current = front;
+        Node<Type> * previous = nullptr;
+    }
+}
 
 
 

@@ -150,7 +150,7 @@ inits:
 + ~List&lt;Types&gt;() : deconstructor
 
 Methods:
-+ setAtIndex(int index, Type data) : void
++ setAtIndex(int index, Type data) : Type
 + addAtIndex(int index, Type value) : void
 + getFromIndex(int index) : Type
 + addFront(Type value) : void
