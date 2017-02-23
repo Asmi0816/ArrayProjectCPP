@@ -153,11 +153,13 @@ Methods:
 + setAtIndex(int index, Type data) : void
 + addAtIndex(int index, Type value) : void
 + getFromIndex(int index) : Type
-+ add(Type value) : void
++ addFront(Type value) : void
++ addEnd (Type value) : void
 + remove(int index) : Type
 + contains(Type data) : Type
 + getSize() : int
-+ getFrontIndex(int index) : Type
++ getFront() const : Node&lt;Type&gt; *
++ getEnd() const : Node&lt;Type&gt; *
 bg=green</panel_attributes>
     <additional_attributes/>
   </element>
