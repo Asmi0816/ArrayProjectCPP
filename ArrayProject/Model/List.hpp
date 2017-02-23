@@ -152,12 +152,16 @@ Type List<Type> :: remove(int index)
             current = current->getNodePointer();
         }
         
+        toBeRemoved = current;
+        current  = toBeRemoved->getNodePointer();
+        previous-> setNodePointer(current);
     }
-    
+    removed = toBeRemoved->getNodeData();
+    delete toBeRemoved;
     
     
     size--;
-    return index;
+    return removed;
     
 }
 
