@@ -108,7 +108,10 @@ void List<Type> :: addAtIndex(int index, Type value)
             previous = current;
             current = current->getNodePointer();
         }
-        previous->
+        previous-> setNodePointer(insertNode);
+        insertNode-> setNodePointer(current);
+        
+        size++;
     }
 }
 
