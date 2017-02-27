@@ -32,8 +32,8 @@ public:
     Type getFromIndex(int index);
     void addFront(Type value);
     void addEnd(Type data);
+    bool contains(Type findMe);
     Type remove(int index);
-    Type contains(Type data);
     int getSize() const;
     Node<Type> * getFrontIndex() const;
     Type getFrontIndex();
@@ -164,6 +164,43 @@ Type List<Type> :: remove(int index)
     return removed;
     
 }
+
+template <class Type>
+Type List<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index<size);
+    Type information;
+    Node<Type> * current = front;
+    for(int position = 0; position< index; position++)
+    {
+        current = current->getNodePointer();
+    }
+    information = current -> getNodeData();
+    
+    return information;
+}
+
+
+template <class Type>
+bool List<Type> :: contains(Type findMe)
+{
+    assert(index >= 0 && index<size);
+    bool isInList = false;
+    
+    Node<Type> * current = front;
+    for(int index = 0; index < size; index++)
+    {
+        if(current->getNodeData == findMe)
+        {
+            isInList = true;
+            return isInList;
+        }
+    }
+    
+    
+    return isInList;
+}
+
 
 
 
