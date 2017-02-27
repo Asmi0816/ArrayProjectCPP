@@ -33,9 +33,11 @@ public:
     void addFront(Type value);
     void addEnd(Type data);
     bool contains(Type findMe);
+    Node<Type> * getFront() const;
+    Node<Type> * getEnd() const;
+    Node<Type> * getFrontIndex() const;
     Type remove(int index);
     int getSize() const;
-    Node<Type> * getFrontIndex() const;
     Type getFrontIndex();
 };
 
@@ -66,6 +68,32 @@ void List<Type> :: addFront(Type value)
     }
     size++;
 }
+
+template <class Type>
+List<Type> :: ~List<Type>() {
+    Node<Type> * destruction = front;
+    while(front != nullptr){
+        front = front->getNodePointer();
+        delete destruction;
+        destruction = front;
+    }
+}
+
+template <class Type>
+int List<Type> :: getSize() const {
+    return this->size;
+}
+
+template <class Type>
+Node<Type> * List<Type> :: getFront() const {
+    return this->front;
+}
+
+template <class Type>
+Node<Type> * List<Type> :: getEnd() const {
+    return this->end;
+}
+
 
 template <class Type>
 void List<Type> :: addEnd(Type data)
@@ -114,6 +142,24 @@ void List<Type> :: addAtIndex(int index, Type value)
         size++;
     }
 }
+
+template <class Type>
+Type List<Type> :: setAtIndex(int index, Type data){
+    assert(index >= 0 && index < size);
+    Type removeData;
+    
+    Node<Type> * current = front;
+    
+    for(int spot = 0; spot < index; spot++){
+        current = current->getNodePointer();
+    }
+    
+    removeData = current->getNodeData();
+    current->setNodeData(data);
+    
+    return removeData;
+}
+
 
 template <class Type>
 Type List<Type> :: remove(int index)
@@ -184,13 +230,13 @@ Type List<Type> :: getFromIndex(int index)
 template <class Type>
 bool List<Type> :: contains(Type findMe)
 {
-    assert(index >= 0 && index<size);
+   
     bool isInList = false;
     
     Node<Type> * current = front;
     for(int index = 0; index < size; index++)
     {
-        if(current->getNodeData == findMe)
+        if(current->getNodeData() == findMe)
         {
             isInList = true;
             return isInList;

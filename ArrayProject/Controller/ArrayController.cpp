@@ -42,6 +42,8 @@ void ArrayController :: start()
     testNodes();
     cout << "Finished testing" << endl;
     testAdvancedFeatures();
+    testListIntro();
+    
     
 }
 
@@ -102,4 +104,40 @@ void ArrayController :: testAdvancedFeatures()
     
 }
 
-
+void ArrayController :: testListIntro()
+{
+    string removed;
+    List<string> sample;
+    sample.addFront("\"My name is larry! FEAR ME!!!!!!\"");
+    sample.addEnd("(somewhere distant) I will never fear larry!!!!");
+    sample.addAtIndex(0, "As Larry mounted the small hill a new determination filled him.");
+    
+    for(int index = 0; index < sample.getSize(); index++)
+    {
+        cout << sample.getFromIndex(index) << endl;
+    }
+    
+    removed = sample.remove(1);
+    
+    cout << "You just removed" << removed << endl;
+    sample.setAtIndex(1,"However he no longer felt courageous enough to share his message with the world");
+    
+    cout << sample.getFromIndex(1) << endl;;
+    
+    if (sample.contains("However he no longer felt courageous enough to share his message with the world") == 0)
+    {
+        cout << "it contains this yay" << endl;
+    }
+    else
+    {
+        cout <<  "no good" << endl;
+    }
+    
+    cout << sample.getEnd() << endl;
+    cout << sample.getFront() << endl;
+    
+    
+    
+    
+    
+}
