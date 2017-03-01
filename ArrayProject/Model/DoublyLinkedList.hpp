@@ -31,9 +31,32 @@ public:
     
     
 };
+template <class Type>
+DoublyLinkedList<Type> :: DoublyLinkedList()
+{
+    size = 0;
+    front =nullptr;
+    end = nullptr;
+}
 
 
+template <class Type>
+int DoublyLinkedList<Type> :: getSize()
+{
+    return size;
+}
 
+template <class Type>
+DoublyLinkedList<Type> * DoublyLinkedList<Type>  :: getFront()
+{
+    return front;
+}
+
+template <class Type>
+DoublyLinkedList<Type> * DoublyLinkedList<Type>  :: getEnd()
+{
+    return end;
+}
 
 
 
