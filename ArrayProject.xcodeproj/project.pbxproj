@@ -81,10 +81,7 @@
 		F30B7C4A1E490F1100AF173B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F30B7C471E490F0900AF173B /* IntNode.cpp */,
-				F30B7C481E490F0900AF173B /* IntNode.hpp */,
-				F333B45E1E4BA93500AE8CB8 /* IntNodeArray.cpp */,
-				F333B45F1E4BA93500AE8CB8 /* IntNodeArray.hpp */,
+				F3B307451E6768FE00621079 /* SingleType */,
 				F3B317611E523E4C00D9D2E8 /* Node.hpp */,
 				F3D054E31E54E36200D58791 /* Array.hpp */,
 				F38421CB1E5CD9A300F3E72C /* List.hpp */,
@@ -103,6 +100,17 @@
 				F30B7C451E4907F500AF173B /* ArrayController.hpp */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		F3B307451E6768FE00621079 /* SingleType */ = {
+			isa = PBXGroup;
+			children = (
+				F30B7C471E490F0900AF173B /* IntNode.cpp */,
+				F30B7C481E490F0900AF173B /* IntNode.hpp */,
+				F333B45E1E4BA93500AE8CB8 /* IntNodeArray.cpp */,
+				F333B45F1E4BA93500AE8CB8 /* IntNodeArray.hpp */,
+			);
+			name = SingleType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
