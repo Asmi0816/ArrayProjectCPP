@@ -39,25 +39,45 @@ DoublyLinkedList<Type> :: DoublyLinkedList()
     end = nullptr;
 }
 
+template <class Type>
+DoublyLinkedList<Type> :: ~DoublyLinkedList()
+{
+   
+}
 
 template <class Type>
 int DoublyLinkedList<Type> :: getSize()
 {
-    return size;
+    return this->size;
 }
 
 template <class Type>
 DoublyLinkedList<Type> * DoublyLinkedList<Type>  :: getFront()
 {
-    return front;
+    return this->front;
 }
 
 template <class Type>
 DoublyLinkedList<Type> * DoublyLinkedList<Type>  :: getEnd()
 {
-    return end;
+    return this->end;
 }
 
+template <class Type>
+void DoublyLinkedList<Type>  :: setEnd(DoublyLinkedList<Type>  * end)
+{
+    this->end = end;
+}
 
+template <class Type>
+void DoublyLinkedList<Type>  :: setFront(DoublyLinkedList<Type>  * front)
+{
+    this->front = front;
+}
 
+template <class Type>
+void DoublyLinkedList<Type>  :: setSize(DoublyLinkedList<Type>  * size)
+{
+    this->size = size;
+}
 #endif /* DoublyLinkedList_h */

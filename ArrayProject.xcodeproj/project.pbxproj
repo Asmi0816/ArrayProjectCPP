@@ -34,6 +34,9 @@
 		F30B7C481E490F0900AF173B /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
 		F333B45E1E4BA93500AE8CB8 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		F333B45F1E4BA93500AE8CB8 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
+		F36DD0451E6A02470047D82A /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
+		F36DD0461E6A025C0047D82A /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
+		F36DD0471E6A027B0047D82A /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
 		F38421CB1E5CD9A300F3E72C /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
 		F3B307431E675D2C00621079 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		F3B307441E67681700621079 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
@@ -87,7 +90,7 @@
 				F38421CB1E5CD9A300F3E72C /* List.hpp */,
 				F3D4BF8D1E64C72C009BB063 /* BiDirectionalNode.hpp */,
 				F3B307431E675D2C00621079 /* DoublyLinkedList.hpp */,
-				F3B307441E67681700621079 /* CircularList.hpp */,
+				F36DD0481E6A02840047D82A /* Inherits from doubly linked. */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -100,6 +103,17 @@
 				F30B7C451E4907F500AF173B /* ArrayController.hpp */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		F36DD0481E6A02840047D82A /* Inherits from doubly linked. */ = {
+			isa = PBXGroup;
+			children = (
+				F3B307441E67681700621079 /* CircularList.hpp */,
+				F36DD0451E6A02470047D82A /* Stack.hpp */,
+				F36DD0461E6A025C0047D82A /* Queue.hpp */,
+				F36DD0471E6A027B0047D82A /* DoubleList.hpp */,
+			);
+			name = "Inherits from doubly linked.";
 			sourceTree = "<group>";
 		};
 		F3B307451E6768FE00621079 /* SingleType */ = {
