@@ -64,4 +64,47 @@ void Queue<Type> :: enqueue(Type insertedValue)
     this->setSize(this->getSize() + 1);
 }
 
+
+template<class Type>
+Type Queue<Type> :: remove(int index)
+{
+    assert(index == 0 && this->getSize() > 0);
+    
+    return dequeue();
+}
+
+/*
+ Check size
+ if size == 1
+    adjust end to null
+ else
+    move front to next.
+    delete node
+    adjust size
+    return value
+ */
+
+template<class Type>
+Type Queue<Type> :: dequeue()
+{
+    assert(this->getSize > 0);
+    
+    Type removedValue = this->getFront()->getNodeData();
+    BiDirectionalNode<Type> * removeMe = this->getFront();
+    
+    if(this->getSize() == 1)
+    {
+        this->setEnd(nullptr);
+        this->setFront(nullptr);
+    }
+    else
+    {
+        this->setFront(removeMe->getNextPointer());
+        
+    }
+    delete removeMe;
+    this->setSize(this->getSize() -1);
+    returned removedValue;
+}
+
 #endif /* Queue_h */
