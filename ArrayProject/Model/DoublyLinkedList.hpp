@@ -21,13 +21,16 @@ private:
 public:
     DoublyLinkedList();
     virtual ~DoublyLinkedLIst() = 0;
+    virtual void add(Type data) = 0;
+    virtual Type remove(int index) = 0;
     
     int getSize() const;
     BiDirectionalNode<Type> * getFront() const;
     BiDirectionalNode<Type> * getEnd() const;
     
-    virtual void add(Type data) = 0;
-    virtual Type remove(int index) = 0;
+    void setFront(DoublyLinkedList<Type> * front);
+    void setSize(int updated);
+    void setEnd(DoublyLinkedList<Type> * end);
     
     
 };
