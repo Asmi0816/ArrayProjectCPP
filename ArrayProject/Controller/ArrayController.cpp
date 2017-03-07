@@ -10,6 +10,7 @@
 #include <iostream>
 #include "../Model/IntNodeArray.hpp"
 #include "../Model/Queue.hpp"
+#include "../Model/Stack.hpp"
 using namespace std;
 
 void ArrayController :: start()
