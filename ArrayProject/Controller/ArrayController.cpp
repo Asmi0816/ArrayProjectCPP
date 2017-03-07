@@ -9,6 +9,7 @@
 #include "ArrayController.hpp"
 #include <iostream>
 #include "../Model/IntNodeArray.hpp"
+#include "../Model/Queue.hpp"
 using namespace std;
 
 void ArrayController :: start()

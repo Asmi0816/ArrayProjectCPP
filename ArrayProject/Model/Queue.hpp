@@ -129,7 +129,7 @@ Type Queue<Type> :: dequeue()
     this->setFront()->setPreviousPointer(nullptr);
     delete removeMe;
     this->setSize(this->getSize() -1);
-    returned removedValue;
+    return removedValue;
 }
 
 
