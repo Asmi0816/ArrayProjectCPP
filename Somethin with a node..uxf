@@ -403,4 +403,15 @@ m2=0..n</panel_attributes>
 + addAtIndexFast(int index, Type data) : void</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>860</x>
+      <y>280</y>
+      <w>110</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;230.0;90.0;10.0</additional_attributes>
+  </element>
 </diagram>
