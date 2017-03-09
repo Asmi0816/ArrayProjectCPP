@@ -11,6 +11,7 @@
 #include "../Model/IntNodeArray.hpp"
 #include "../Model/Queue.hpp"
 #include "../Model/Stack.hpp"
+#include "../Model/DoubleList.hpp"
 using namespace std;
 
 void ArrayController :: start()

@@ -9,7 +9,7 @@
 #ifndef DoubleList_h
 #define DoubleList_h
 
-template <classType>
+template <class Type>
 class DoubleList : public DoublyLinkedList<Type>
 {
 private:
@@ -27,7 +27,7 @@ public:
 };
 
 template <class Type>
-void DoubleLis<Type> :: add(Type value)
+void DoubleList<Type> :: add(Type value)
 {
     BiDirectionalNode<Type> * addedNode = new BiDirectionalNode<Type>(value);
     if(this->getSize() == 0)
@@ -37,7 +37,7 @@ void DoubleLis<Type> :: add(Type value)
     else
     {
         this->getEnd()->setNextPointer(addedNode);
-        addeNode -> setPreviosPointer(this->getEnd());
+        addedNode -> setPreviosPointer(this->getEnd());
     }
     this->setEnd(addedNode);
     this->setSize(this->getSize()+1);
@@ -60,15 +60,15 @@ DoubleList<Type> :: ~DoubleList()
 
 
 template <class Type>
-Type DoubleLis<Type> :: remove(int index)
+Type DoubleList<Type> :: remove(int index)
 {
     Type derp;
     BiDirectionalNode<Type> * nodeToTakeOut = this->getFront();
-    for(int spot = 0; spot < index; spot)
+    for(int spot = 0; spot < index; spot++)
     {
         nodeToTakeOut = nodeToTakeOut->getNextPointer();
     }
-    derp = nodeToTakeOut->getNNextPointer()
+    derp = nodeToTakeOut->getNNextPointer();
     
     BiDirectionalNode<Type> * prev = nodeToTakeOut->getPreviousPointer();
     BiDirectionalNode<Type> * next = nodeToTakeOut->getNextPointer();
@@ -79,7 +79,7 @@ Type DoubleLis<Type> :: remove(int index)
     delete nodeToTakeOut;
     
     this->setSize(this->gettSize()-1);
-    return derp;ß
+    return derp;
     
     
 }
