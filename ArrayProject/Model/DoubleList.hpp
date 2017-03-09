@@ -22,7 +22,7 @@ public:
     Type remove(int index);
     void addAtIndexFast(int index, Type value);
     void addAtIndex(int index, Type value);
-    Type getFromInde(int index);
+    Type getFromIndex(int index);
     Type getFromIndexFast(int index);
 };
 
@@ -37,7 +37,7 @@ void DoubleList<Type> :: add(Type value)
     else
     {
         this->getEnd()->setNextPointer(addedNode);
-        addedNode -> setPreviosPointer(this->getEnd());
+        addedNode->setPreviosPointer(this->getEnd());
     }
     this->setEnd(addedNode);
     this->setSize(this->getSize()+1);

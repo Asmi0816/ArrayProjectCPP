@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C9B346A6620D3A4C4231DBB7292EF2AEEF887DB8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C9B346A6620D3A4C4231DBB7292EF2AEEF887DB8" : 9223372036854775807,
+    "20D860C55C0F401E6326CBAC22543947B3207110" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4F89F0F3-1E08-4D74-96DC-7005FD9A663F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C9B346A6620D3A4C4231DBB7292EF2AEEF887DB8" : "ArrayProject\/",
+    "20D860C55C0F401E6326CBAC22543947B3207110" : "FirstCPlusPlus\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ArrayProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ArrayProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Asmi0816\/FirstCPlusPlus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "20D860C55C0F401E6326CBAC22543947B3207110"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Asmi0816\/ArrayProjectCPP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C9B346A6620D3A4C4231DBB7292EF2AEEF887DB8"
+    }
+  ]
+}
