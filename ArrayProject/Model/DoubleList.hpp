@@ -27,6 +27,13 @@ public:
 };
 
 template <class Type>
+DoubleList<Type> :: DoubleList() : DoublyLinkedList<Type>()
+{
+    
+}
+
+
+template <class Type>
 void DoubleList<Type> :: add(Type value)
 {
     BiDirectionalNode<Type> * addedNode = new BiDirectionalNode<Type>(value);
@@ -68,7 +75,7 @@ Type DoubleList<Type> :: remove(int index)
     {
         nodeToTakeOut = nodeToTakeOut->getNextPointer();
     }
-    derp = nodeToTakeOut->getNextPointer();
+    derp = nodeToTakeOut->getNodeData();
     
     BiDirectionalNode<Type> * prev = nodeToTakeOut->getPreviousPointer();
     BiDirectionalNode<Type> * next = nodeToTakeOut->getNextPointer();
@@ -107,7 +114,25 @@ Type DoubleList<Type>:: getFromIndexFast(int index)
     
     valueAtIndex= reference->getNodeData();
     return valueAtIndex;
+}
+
+template <class Type>
+Type DoubleList<Type> :: getFromIndex(int index)
+{
     
+    assert(index >= 0 && index < this->getSize());
+    Type valueAtIndex;
+    
+    BiDirectionalNode<Type> * reference = this->getFront();
+
+    for(int position = 0; position< index; position++)
+    {
+        reference = reference->getNextPointer();
+    }
+    valueAtIndex = reference->getNodeData();
+    
+    return valueAtIndex;
+
     
 }
 

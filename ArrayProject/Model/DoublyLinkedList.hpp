@@ -79,7 +79,7 @@ void DoublyLinkedList<Type>  :: setFront(BiDirectionalNode<Type>  * front)
 }
 
 template <class Type>
-void DoublyLinkedList<Type>  :: setSize(int updated)
+void DoublyLinkedList<Type>  :: setSize(int size)
 {
     this->size = size;
 }
