@@ -181,8 +181,11 @@ void ArrayController :: testListTiming()
     averageSlow += averageSlow/1000.00;
     averageFast += averageFast/1000.00;
     
-    cout << "When you do it in one diretion searching you get an average of: "  << averageSlow<< endl;
-    cout << "When you do the BiDirectional way you get: " << averageFast << endl;
+    cout << "When you do it in one diretion searching you get an average of: "  << averageSlow << "microseconds" << endl;
+    cout << "When you do the BiDirectional way you get: " << averageFast << "microseconds" << endl;
+    cout << "The time you save with the 2Directional is: " << averageSlow - averageFast << "microseconds"  << endl;
+    totalTimer.displayTimerInformation();
+    
 }
                                
                                
