@@ -45,6 +45,8 @@ void ArrayController :: start()
    // testAdvancedFeatures();
    // testListIntro();
     testListTiming();
+    testFoodQueue();
+    testIntStack();
     
     
 }
@@ -191,9 +193,12 @@ void ArrayController :: testListTiming()
 void ArrayController :: testIntStack()
 {
     Stack<int> numberStack;
-    numberStack.add(2323);
     numberStack.push(747474747);
-    numberStack.peek();
+    numberStack.add(2323);
+    cout << "Both the numbers in order should be: " << numberStack.pop() << " " << numberStack.remove(0) << endl;
+    numberStack.push(77757);
+    cout << "There should only be 1 thing in this stack and there is: " << numberStack.getSize() << endl;
+    cout << "And the one thing is " << numberStack.peek() << " and should be: 77757" << endl;;
     
     
 }
@@ -213,6 +218,9 @@ void ArrayController :: testFoodQueue()
     int sizeOfFood = tastyFood.getSize();
     cout << "The restuants food order queues was: "<< sizeOfFood << " and should be: 2" << endl;
     FoodItem crushedGoldFish = tastyFood.remove(0);
+    cout << "The restuants got rid of: "<< crushedGoldFish.getFoodName()  << " rice and mochi" << endl;
+    tastyFood.peek();
+    cout << "And the food in the highest priority is: " << tastyFood.peek().getFoodName() << " and should be: Chinese Dessert"<< endl;
 
 }
 
