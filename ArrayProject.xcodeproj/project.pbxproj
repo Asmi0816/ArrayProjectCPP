@@ -12,6 +12,7 @@
 		F30B7C491E490F0900AF173B /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F30B7C471E490F0900AF173B /* IntNode.cpp */; };
 		F333B4601E4BA93500AE8CB8 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333B45E1E4BA93500AE8CB8 /* IntNodeArray.cpp */; };
 		F37599751E71E2BA0016C86D /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37599741E71E2BA0016C86D /* Timer.cpp */; };
+		F3803F5E1E7711F1006ED12C /* FoodItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3803F5C1E7711F1006ED12C /* FoodItem.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		F36DD0471E6A027B0047D82A /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
 		F37599731E71E2AD0016C86D /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = ../../FirstCPlusPlus/FirstCPlusPlus/Model/Timer.hpp; sourceTree = "<group>"; };
 		F37599741E71E2BA0016C86D /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = ../../FirstCPlusPlus/FirstCPlusPlus/Model/Timer.cpp; sourceTree = "<group>"; };
+		F3803F5C1E7711F1006ED12C /* FoodItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoodItem.cpp; path = Model/FoodItem.cpp; sourceTree = "<group>"; };
+		F3803F5D1E7711F1006ED12C /* FoodItem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FoodItem.hpp; path = Model/FoodItem.hpp; sourceTree = "<group>"; };
 		F38421CB1E5CD9A300F3E72C /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
 		F3B307431E675D2C00621079 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		F3B307441E67681700621079 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
@@ -96,6 +99,8 @@
 				F3D4BF8D1E64C72C009BB063 /* BiDirectionalNode.hpp */,
 				F3B307431E675D2C00621079 /* DoublyLinkedList.hpp */,
 				F36DD0481E6A02840047D82A /* Inherits from doubly linked. */,
+				F3803F5C1E7711F1006ED12C /* FoodItem.cpp */,
+				F3803F5D1E7711F1006ED12C /* FoodItem.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			files = (
 				F30B7C491E490F0900AF173B /* IntNode.cpp in Sources */,
 				F333B4601E4BA93500AE8CB8 /* IntNodeArray.cpp in Sources */,
+				F3803F5E1E7711F1006ED12C /* FoodItem.cpp in Sources */,
 				F30B7C431E4907D900AF173B /* ArrayRunner.cpp in Sources */,
 				F37599751E71E2BA0016C86D /* Timer.cpp in Sources */,
 				F30B7C461E4907F500AF173B /* ArrayController.cpp in Sources */,

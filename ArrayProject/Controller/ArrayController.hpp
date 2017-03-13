@@ -18,6 +18,7 @@
 #include "../Model/DoublyLinkedList.hpp"
 #include "../Model/BiDirectionalNode.hpp"
 #include "../Model/Timer.hpp"
+#include "../Model/FoodItem.hpp"
 
 #include <string>
 
@@ -33,6 +34,8 @@ private:
     void testAdvancedFeatures();
     void testListIntro();
     void testListTiming();
+    void testIntStack();
+    void testFoodQueue();
     
 public:
     ArrayController();

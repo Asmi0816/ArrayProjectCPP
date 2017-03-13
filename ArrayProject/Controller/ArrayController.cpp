@@ -187,6 +187,32 @@ void ArrayController :: testListTiming()
     totalTimer.displayTimerInformation();
     
 }
+
+void ArrayController :: testIntStack()
+{
+    Stack<int> numberStack;
+    numberStack.add(2323);
+    numberStack.push(747474747);
+    numberStack.peek();
+    
+    
+}
                                
-                               
+void ArrayController :: testFoodQueue()
+{
+    
+    Queue<FoodItem> tastyFood;
+    FoodItem rice("Bland Chinese Dish");
+    tastyFood.enqueue(rice);
+    FoodItem boring;
+    tastyFood.add(boring);
+    FoodItem removed = tastyFood.dequeue();
+    cout << "The item removed from the queue was: "<< removed.getFoodName() << " and should be: Bland Chinese Dish" << endl;
+    FoodItem mochi("Chinese Dessert");
+    tastyFood.add(mochi);
+    int sizeOfFood = tastyFood.getSize();
+    cout << "The restuants food order queues was: "<< sizeOfFood << " and should be: 2" << endl;
+    FoodItem crushedGoldFish = tastyFood.remove(0);
+
+}
 
