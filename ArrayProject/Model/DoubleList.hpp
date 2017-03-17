@@ -76,13 +76,30 @@ Type DoubleList<Type> :: remove(int index)
         nodeToTakeOut = nodeToTakeOut->getNextPointer();
     }
     derp = nodeToTakeOut->getNodeData();
-    
+    if(this->getSize() -1)
+    {
     BiDirectionalNode<Type> * prev = nodeToTakeOut->getPreviousPointer();
     BiDirectionalNode<Type> * next = nodeToTakeOut->getNextPointer();
     
     prev->setNextPointer(next);
     next->setPreviousPointer(prev);
-    
+        if(index == 0)
+        {
+            this->setFront(this->getFront()->getNextPointer());
+            
+        }
+        else if(index == this->getSize() -1)
+        {
+            this->setEnd(this->getEnd()->getPreviousPointer());
+        }
+
+    }
+    else
+    {
+        this->setFront(nullptr);
+        this->setEnd(nullptr);
+    }
+
     delete nodeToTakeOut;
     
     this->setSize(this->getSize()-1);
