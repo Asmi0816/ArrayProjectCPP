@@ -19,6 +19,7 @@
 #include "../Model/BiDirectionalNode.hpp"
 #include "../Model/Timer.hpp"
 #include "../Model/FoodItem.hpp"
+#include "../Model/CircularList.hpp"
 
 #include <string>
 
@@ -36,6 +37,7 @@ private:
     void testListTiming();
     void testIntStack();
     void testFoodQueue();
+    void testCircularList();
     
 public:
     ArrayController();
