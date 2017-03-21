@@ -195,12 +195,18 @@ void ArrayController :: testIntStack()
     Stack<int> numberStack;
     numberStack.push(747474747);
     numberStack.add(2323);
-    cout << "Both the numbers in order should be: " << numberStack.pop() << " " << numberStack.remove(0) << endl;
+    cout << "Both the numbers in order should be 2323 747474747. and is : " << numberStack.pop() << " " << numberStack.remove(0) << endl;
     numberStack.push(77757);
     cout << "There should only be 1 thing in this stack and there is: " << numberStack.getSize() << endl;
     cout << "And the one thing is " << numberStack.peek() << " and should be: 77757" << endl;;
-    
-    
+    numberStack.add(7);
+    numberStack.add(6);
+    numberStack.add(5);
+    numberStack.add(4);
+    numberStack.add(3);
+    numberStack.add(2);
+    numberStack.add(1);
+    cout << "Then it should count up to seven: " << numberStack.pop()<< numberStack.pop()<< numberStack.pop()<< numberStack.pop()<< numberStack.pop()<< numberStack.pop()<< numberStack.pop()<<endl;
 }
                                
 void ArrayController :: testFoodQueue()
@@ -221,6 +227,7 @@ void ArrayController :: testFoodQueue()
     cout << "The restuants got rid of: "<< crushedGoldFish.getFoodName()  << " rice and mochi" << endl;
     tastyFood.peek();
     cout << "And the food in the highest priority is: " << tastyFood.peek().getFoodName() << " and should be: Chinese Dessert"<< endl;
+    cout << "And the size afer all this would be 1 and is:" << tastyFood.getSize() << endl;
 
 }
 
