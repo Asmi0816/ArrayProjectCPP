@@ -102,7 +102,7 @@ Type CircularList<Type> :: remove(int index)
     
     removedValue = removed->getNodeData();
     
-    BiDirectionalNode<Type> * oldPrevious= removed->gettPreviousPointer();
+    BiDirectionalNode<Type> * oldPrevious= removed->getPreviousPointer();
     BiDirectionalNode<Type> * oldNext = removed->getNextPointer();
     
     if(this->getSize() > 1)
