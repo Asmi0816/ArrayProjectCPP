@@ -372,3 +372,16 @@ bool CrimeData :: operator > (const CrimeData & comparedData)
     
 }
 
+bool CrimeData :: operator == (const CrimeData & compared)
+{
+    bool isThisTheSame = !(*this < compared) && !(*this > compared);
+    
+    return isThisTheSame;
+}
+
+
+
+
+
+
+
