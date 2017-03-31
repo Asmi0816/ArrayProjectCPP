@@ -68,5 +68,17 @@ void FoodItem :: setCost(double cost)
 }
 
 
-
+bool FoodItem :: operator < (FoodItem & otherFood)
+{
+    if(this->isDelicious() && otherFood.isDelicious())
+    {
+        if(this->getCalories() > otherFood.getCalories())
+        {
+            
+            return true;
+        }
+        return false;
+    }
+    return false;
+}
 
