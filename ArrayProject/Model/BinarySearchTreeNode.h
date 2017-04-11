@@ -6,8 +6,8 @@
 //  Copyright © 2017 Smith, Arick. All rights reserved.
 //
 
-#ifndef Header_h
-#define Header_h
+#ifndef BinarySearchTreeNode_h
+#define BinarySearchTreeNode_h
 
 #include "Node.hpp"
 
@@ -97,4 +97,4 @@ void BinarySearchTreeNode<Type> :: setRightChild(BinarySearchTreeNode<Type> * ri
     this->rightChild = rightChild;
 }
 
-#endif /* Header_h */
+#endif /*BinarySearchTreeNode_h*/
