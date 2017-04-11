@@ -54,6 +54,53 @@ void BinarySearchTree<Type> :: setRoot(BinarySearchTreeNode<Type> * root)
     this->root = root;
 }
 
+template <class Type>
+void BinarySearchTree<Type> ::inOrderTraversal()
+{
+    
+    
+}
+
+template <class Type>
+void BinarySearchTree<Type> ::preOrderTraversal()
+{
+    
+    
+}
+
+template <class Type>
+void BinarySearchTree<Type> ::postOrderTraversal()
+{
+    
+    
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: calulateSize(BinarySearchTreeNode<Type> * start)
+{
+    return -99;
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTreeNode<Type> * inStart)
+{
+   
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: preOrderTraversal(BinarySearchTreeNode<Type> * preStart)
+{
+    
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTreeNode<Type> * postStart)
+{
+    
+}
+
+
+
 
 
 #endif /* BinarySearchTree_h */
