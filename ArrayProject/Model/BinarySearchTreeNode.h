@@ -30,9 +30,9 @@ public:
     BinarySearchTreeNode<Type> * getLeftChild();
     BinarySearchTreeNode<Type> * getRightChild();
 
-    void setRootPointer(BinarySearchTreeNode<type> * root);
-    void setLeftChild(BinarySearchTreeNode<type> * left);
-    void setRightChild(BinarySearchTreeNode<type> * right);
+    void setRootPointer(BinarySearchTreeNode<Type> * root);
+    void setLeftChild(BinarySearchTreeNode<Type> * left);
+    void setRightChild(BinarySearchTreeNode<Type> * right);
 };
 
 
@@ -74,7 +74,7 @@ BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getRightChild()
 }
 
 template <class Type>
-BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getRoot()
+BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getRootPointer()
 {
     return this->root;
 }

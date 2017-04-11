@@ -20,6 +20,7 @@
 #include "../Model/Timer.hpp"
 #include "../Model/FoodItem.hpp"
 #include "../Model/CircularList.hpp"
+#include "../Model/BinarySearchTreeNode.h"
 
 #include <string>
 
