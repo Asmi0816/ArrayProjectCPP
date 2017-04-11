@@ -48,6 +48,7 @@
 		F3803F5C1E7711F1006ED12C /* FoodItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FoodItem.cpp; path = Model/FoodItem.cpp; sourceTree = "<group>"; };
 		F3803F5D1E7711F1006ED12C /* FoodItem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FoodItem.hpp; path = Model/FoodItem.hpp; sourceTree = "<group>"; };
 		F38421CB1E5CD9A300F3E72C /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = Model/List.hpp; sourceTree = "<group>"; };
+		F3A2ECDA1E9D5397006BE541 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Header.h; path = Model/Header.h; sourceTree = "<group>"; };
 		F3B307431E675D2C00621079 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		F3B307441E67681700621079 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
 		F3B317611E523E4C00D9D2E8 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 				F36DD0481E6A02840047D82A /* Inherits from doubly linked. */,
 				F3803F5C1E7711F1006ED12C /* FoodItem.cpp */,
 				F3803F5D1E7711F1006ED12C /* FoodItem.hpp */,
+				F3A2ECDA1E9D5397006BE541 /* Header.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
