@@ -33,7 +33,69 @@ public:
     
     void setHeight(int height);
     void setSize(int size);
-    void setComplete(int complete);
-    void setBalanced(int balanced);
+    void setComplete(bool complete);
+    void setBalanced(bool balanced);
 };
+
+template <class Type>
+Tree<Type> :: Tree()
+{
+    height = 0;
+    size = 0;
+    balanced = false;
+    complete = false;
+    
+}
+
+
+
+template <class Type>
+int Tree<Type> :: getHeight() const
+{
+    return this->height;
+}
+
+
+template <class Type>
+int Tree<Type> :: getSize() const
+{
+    return this->size;
+}
+
+template <class Type>
+bool Tree<Type> :: isComplete() const
+{
+    return this->complete;
+}
+
+template <class Type>
+bool Tree<Type> :: isBalanced() const
+{
+    return this->Balanced;
+}
+
+template <class Type>
+void Tree<Type> :: setHeight(int height)
+{
+    this->height = height;
+}
+
+template <class Type>
+void Tree<Type> :: setComplete(bool complete)
+{
+    this->height = height;
+}
+
+template <class Type>
+void Tree<Type> :: setBalanced(bool balanced)
+{
+    this->balanced =balanced;
+}
+
+template <class Type>
+void Tree<Type> :: setSize(int size)
+{
+    this->size = size;
+}
+
 #endif /* Tree_h */

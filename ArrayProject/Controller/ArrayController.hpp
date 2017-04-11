@@ -21,6 +21,7 @@
 #include "../Model/FoodItem.hpp"
 #include "../Model/CircularList.hpp"
 #include "../Model/BinarySearchTreeNode.h"
+#include "../Model/Tree.h"
 
 #include <string>
 
