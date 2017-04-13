@@ -341,7 +341,7 @@ void BinarySearchTree<Type> ::removeNode(BinarySearchTreeNode<Type> * & removeMe
         
         delete current;
     }
-    if(removeMe->getRootPointer == nullptr)
+    if(removeMe->getRootPointer == nullptr || removeMe->getRootPointer == nullptr)
     {
         setRoot(removeMe);
     }
