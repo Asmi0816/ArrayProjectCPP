@@ -325,12 +325,18 @@ void BinarySearchTree<Type> ::removeNode(BinarySearchTreeNode<Type> * & removeMe
         if(previous == nullptr)
         {
             removeMe->setLeftChild(current->getLeftChild());
+            if(current->getLeftChild() != nullptr)
+            {
             current->getLeftChild()->setRootPointer(removeMe);
+            }
         }
         else
         {
+            if(current->getLeftChild() != nullptr)
+            {
             previous->setRightChild(current->getLeftChild());
             current->getLeftChild()->setRootPointer(previous);
+            }
         }
         
         delete current;
