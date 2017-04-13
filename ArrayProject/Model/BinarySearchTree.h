@@ -311,7 +311,7 @@ void BinarySearchTree<Type> ::removeNode(BinarySearchTreeNode<Type> * & removeMe
     //both children
     else
     {
-        current = removeMe->gettLeftChild();
+        current = removeMe->getLeftChild();
         previous = nullptr;
         
         while(current->getRightChild() != nullptr)
@@ -320,7 +320,7 @@ void BinarySearchTree<Type> ::removeNode(BinarySearchTreeNode<Type> * & removeMe
             current = current->getRightChild();
         }
         
-        removeMe->seetNodeData(current->getNodeData());
+        removeMe->setNodeData(current->getNodeData());
         
         if(previous == nullptr)
         {
@@ -340,6 +340,10 @@ void BinarySearchTree<Type> ::removeNode(BinarySearchTreeNode<Type> * & removeMe
         }
         
         delete current;
+    }
+    if(removeMe->getRootPointer == nullptr)
+    {
+        setRoot(removeMe);
     }
 
 }
