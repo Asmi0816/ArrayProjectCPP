@@ -22,6 +22,8 @@ private:
     void preOrderTraversal(BinarySearchTreeNode<Type> * preStart);
     void postOrderTraversal(BinarySearchTreeNode<Type> * postStart);
     
+    void removeNode(BinarySearchTreeNode<Type> * & removeMe);
+    
 public:
     BinarySearchTree();
     ~BinarySearchTree();
@@ -32,6 +34,12 @@ public:
     void inOrderTraversal();
     void preOrderTraversal();
     void postOrderTraversal();
+    
+    void printToFile();
+    
+    bool contains(Type value);
+    void insert(Type itemToInsert);
+    void remove(Type value);
 };
 
 
@@ -42,9 +50,16 @@ BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
 }
 
 template <class Type>
-BinarySearchTreeNode<Type> * BinarySearchTree<Type> : getRoot()
+BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
 {
     this->root = nullptr;
+}
+
+template <class Type>
+BinarySearchTree<Type>:: ~BinarySearchTree()
+{
+    
+    
 }
 
 template <class Type>
@@ -76,7 +91,7 @@ void BinarySearchTree<Type> ::postOrderTraversal()
 }
 
 template <class Type>
-int BinarySearchTree<Type> :: calulateSize(BinarySearchTreeNode<Type> * start)
+int BinarySearchTree<Type> :: calculateSize(BinarySearchTreeNode<Type> * start)
 {
     return -99;
 }
@@ -97,6 +112,50 @@ template <class Type>
 void BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTreeNode<Type> * postStart)
 {
     
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: insert(Type itemToInsert)
+{
+    BinarySearchTree<Type>* insertMe = new BinarySearchTreeNode<Type>(itemToInsert);
+    BinarySearchTree<Type>* previous = nullptr;
+    BinarySearchTree<Type>* current = root;
+    
+    if(current == nullptr)
+    {
+        root = insertMe;
+    }
+    else
+    {
+        while(current != nullptr)
+        {
+            previous = current;
+            if(itemToInsert < current -> getNodeData())
+            {
+                current = current->getLeftChild();
+            }
+            else if(itemToInsert > current-> getNodeData())
+            {
+                current = current->getRightChild();
+            }
+            else
+            {
+                cerr << "ITEM ALREADY EXISTS CLOSING" << endl;
+                delete insertMe;
+                return;
+                
+            }
+        }
+        if(previous->getNodeData() > itemToIsert)
+        {
+            previous->setLeftChild(insertMe);
+        }
+        else
+        {
+            previous->setRightChild(insertMe);
+        }
+        insertMe->setRootPointer(previous);
+    }
 }
 
 

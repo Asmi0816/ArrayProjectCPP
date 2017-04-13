@@ -8,6 +8,7 @@
 
 #ifndef Tree_h
 #define Tree_h
+#include "BinarySearchTree.h"
 
 template <class Type>
 class Tree

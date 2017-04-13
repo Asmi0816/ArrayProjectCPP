@@ -111,9 +111,7 @@
 				F36DD0481E6A02840047D82A /* Inherits from doubly linked. */,
 				F3803F5C1E7711F1006ED12C /* FoodItem.cpp */,
 				F3803F5D1E7711F1006ED12C /* FoodItem.hpp */,
-				F3A2ECDA1E9D5397006BE541 /* BinarySearchTreeNode.h */,
-				F3A2ECDB1E9D57FE006BE541 /* Tree.h */,
-				F3A2ECDC1E9D5B99006BE541 /* BinarySearchTree.h */,
+				F390A73D1E9FF053009D02D5 /* Trees */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -139,6 +137,16 @@
 				F36DD0471E6A027B0047D82A /* DoubleList.hpp */,
 			);
 			name = "Inherits from doubly linked.";
+			sourceTree = "<group>";
+		};
+		F390A73D1E9FF053009D02D5 /* Trees */ = {
+			isa = PBXGroup;
+			children = (
+				F3A2ECDA1E9D5397006BE541 /* BinarySearchTreeNode.h */,
+				F3A2ECDB1E9D57FE006BE541 /* Tree.h */,
+				F3A2ECDC1E9D5B99006BE541 /* BinarySearchTree.h */,
+			);
+			name = Trees;
 			sourceTree = "<group>";
 		};
 		F3B307451E6768FE00621079 /* SingleType */ = {
