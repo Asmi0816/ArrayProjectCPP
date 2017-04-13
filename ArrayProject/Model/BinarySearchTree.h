@@ -223,7 +223,7 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
         }
         if(current == nullptr)
         {
-            carr<<"Item not found, removal unsuccessful" << endl;
+            cerr<<"Item not found, removal unsuccessful" << endl;
         }
         else if(hasBeenFound)
         {
