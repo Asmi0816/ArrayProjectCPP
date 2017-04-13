@@ -22,6 +22,7 @@
 #include "../Model/CircularList.hpp"
 #include "../Model/BinarySearchTreeNode.h"
 #include "../Model/Tree.h"
+#include "../Model/BinarySearchTree.h"
 
 #include <string>
 
