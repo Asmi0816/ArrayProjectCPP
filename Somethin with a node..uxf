@@ -495,10 +495,10 @@ bg=#f54332</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>730</x>
-      <y>2250</y>
-      <w>500</w>
-      <h>340</h>
+      <x>600</x>
+      <y>2210</y>
+      <w>760</w>
+      <h>660</h>
     </coordinates>
     <panel_attributes>Model :: BinarySearchTree&lt;Type&gt;
 --
@@ -517,12 +517,21 @@ bg=#f54332</panel_attributes>
 +setRootPointer( BinarySearchTreeNode&lt;Type&gt;* root) : void
 
 - calculateSize(BinarySearchTreeNode&lt;ype&gt;*) : int
++ getSize() : int
 
 -inOrderTraversal() : void
 -preOrderTraversal() : void
 -postOrderTraversal() : void
+- removeNode(BinarySearchTreeNode&lt;ype&gt;*) : void
 
++inOrderTraversal() : void
++preOrderTraversal() : void
++postOrderTraversal() : void
++printToFile() : void
 
++insert(Type) :void
++contains(Type) : void
++remove(Type) : void
 bg=#6634245</panel_attributes>
     <additional_attributes/>
   </element>
@@ -531,21 +540,21 @@ bg=#6634245</panel_attributes>
     <coordinates>
       <x>790</x>
       <y>2070</y>
-      <w>160</w>
-      <h>200</h>
+      <w>30</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;140.0;180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>920</x>
+      <x>790</x>
       <y>2110</y>
-      <w>250</w>
-      <h>160</h>
+      <w>380</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>230.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>360.0;10.0;10.0;100.0</additional_attributes>
   </element>
 </diagram>

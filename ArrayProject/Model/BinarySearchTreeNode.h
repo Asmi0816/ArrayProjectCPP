@@ -14,7 +14,7 @@
 template <class Type>
 class BinarySearchTreeNode : public Node<Type>
 {
-    
+
 private:
     
     BinarySearchTreeNode<Type> * root;
