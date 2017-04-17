@@ -40,8 +40,9 @@ public:
 template <class Type>
 BinarySearchTreeNode<Type> :: BinarySearchTreeNode() : Node<Type>()
 {
+    this->setNodeData(nullptr);
     this->root = nullptr;
-    this->frontChild = nullptr;
+    this->leftChild = nullptr;
     this->leftChild = nullptr;
     
 }
@@ -57,7 +58,7 @@ template <class Type>
 BinarySearchTreeNode<Type> :: BinarySearchTreeNode(Type data) : Node<Type>(data)
 {
     this->root = nullptr;
-    this->frontChild = nullptr;
+    this->leftChild = nullptr;
     this->leftChild = nullptr;
     
 }

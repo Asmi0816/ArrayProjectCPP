@@ -20,6 +20,7 @@
 #include "../Model/Timer.hpp"
 #include "../Model/FoodItem.hpp"
 #include "../Model/CircularList.hpp"
+#include "../Controller/FileController.hpp"
 #include "../Model/BinarySearchTreeNode.h"
 #include "../Model/Tree.h"
 #include "../Model/BinarySearchTree.h"
@@ -41,6 +42,7 @@ private:
     void testIntStack();
     void testFoodQueue();
     void testCircularList();
+    void testBinarySearchTreeOperations();
     
 public:
     ArrayController();
