@@ -60,7 +60,7 @@ BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
 template <class Type>
 BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
 {
-    this->root = nullptr;
+    return root;
 }
 
 template <class Type>
@@ -149,7 +149,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
         while(current != nullptr)
         {
             previous = current;
-            if(itemToInsert < current -> getNodeData())
+            if(itemToInsert < current->getNodeData())
             {
                 current = current->getLeftChild();
             }
