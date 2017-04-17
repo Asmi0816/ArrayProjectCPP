@@ -66,6 +66,7 @@ BinarySearchTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
 template <class Type>
 BinarySearchTree<Type>:: ~BinarySearchTree()
 {
+    delete root;
     
     
 }
