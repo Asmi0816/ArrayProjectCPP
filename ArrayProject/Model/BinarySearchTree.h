@@ -10,6 +10,9 @@
 #define BinarySearchTree_h
 #include "Tree.h"
 #include "BinarySearchTreeNode.h"
+#include <iostream>
+
+using namespace std;
 
 template <class Type>
 class BinarySearchTree : public Tree<Type>
@@ -20,7 +23,7 @@ protected:
     
     int calculateSize(BinarySearchTreeNode<Type> * root);
     int calculateHeight(BinarySearchTreeNode<Type> * root);
-    bool isComplete(BinarySearchTreeNode<Type> * root);
+    bool isComplete(BinarySearchTreeNode<Type> * root, int index, int size);
     bool isBalanced(BinarySearchTreeNode<Type> * root);
     
     void inOrderTraversal(BinarySearchTreeNode<Type> * inStart);
@@ -423,10 +426,18 @@ bool BinarySearchTree<Type> :: isBalanced(BinarySearchTreeNode<Type> * start)
     return false;
 }
 template <class Type>
-bool BinarySearchTree<Type> :: isComplete(BinarySearchTreeNode<Type> * start)
+bool BinarySearchTree<Type> :: isComplete(BinarySearchTreeNode<Type> * start, int index, int size)
 {
-    return false;
-    
+    if(start == nullptr)
+    {
+       
+        return true;
+    }
+    if(index >= size)
+    {
+        return false;
+    }
+    return(isComplete(start->getLeftChild(),2 * index+1, size) && isComplete(start->getRightChild(), 2* index+2,size));
 }
 
 
@@ -452,7 +463,9 @@ bool BinarySearchTree<Type> :: isBalanced()
 template <class Type>
 bool BinarySearchTree<Type> :: isComplete()
 {
-    return isComplete(root);
+    int index = 0;
+    int size = getSize();
+    return isComplete(root, index, size);
 }
 
 #endif /* BinarySearchTree_h */

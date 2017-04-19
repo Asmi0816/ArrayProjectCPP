@@ -43,6 +43,9 @@ private:
     void testFoodQueue();
     void testCircularList();
     void testBinarySearchTreeOperations();
+    void testBinarySearchData();
+    void testAVLTreeOperations();
+    void testAVLData();
     
 public:
     ArrayController();

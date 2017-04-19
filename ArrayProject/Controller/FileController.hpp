@@ -12,6 +12,7 @@
 #include "../Model/DoubleList.hpp"
 #include "../Model/FoodItem.hpp"
 #include "../Model/CrimeData.hpp"
+#include "../Model/BinarySearchTree.h"
 #include <string> // String access
 #include <fstream> // File operations
 #include <iostream> // Console thing
@@ -29,6 +30,8 @@ private:
 public:
     DoubleList<FoodItem> readDataFromFile(string filename);
     void writeFoodDataStatistics(DoubleList<FoodItem> source, string fileName);
+    BinarySearchTree<CrimeData> readCrimeDataToBinarySearchTree(string filename);
+    AVLTree<CrimeData> readCrimeDataToAVLTree(string filename);
 };
 
 
