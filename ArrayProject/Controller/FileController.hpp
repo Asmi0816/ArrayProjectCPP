@@ -13,6 +13,7 @@
 #include "../Model/FoodItem.hpp"
 #include "../Model/CrimeData.hpp"
 #include "../Model/BinarySearchTree.h"
+#include "../Model/AVLTree.h"
 #include <string> // String access
 #include <fstream> // File operations
 #include <iostream> // Console thing
