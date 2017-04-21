@@ -126,7 +126,11 @@ BinarySearchTreeNode<Type> * AVLTree<Type> :: balanceSubTree(BinarySearchTreeNod
 }
 
 
-
+template <class Type>
+AVLTree<Type>:: AVLTree() : BinarySearchTree<Type>()
+{
+    
+}
 
 template <class Type>
 AVLTree<Type>:: ~AVLTree()

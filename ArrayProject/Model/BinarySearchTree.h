@@ -32,6 +32,9 @@ protected:
     
     void removeNode(BinarySearchTreeNode<Type> *  removeMe);
     
+    BinarySearchTreeNode<Type> * getRightMostChild(BinarySearchTreeNode<Type> * current);
+    BinarySearchTreeNode<Type> * getLeftMostChild(BinarySearchTreeNode<Type> * current);
+    
 public:
     BinarySearchTree();
     ~BinarySearchTree();
@@ -51,6 +54,9 @@ public:
     bool contains(Type value);
     void insert(Type itemToInsert);
     void remove(Type value);
+    
+    Type findMinimum();
+    Type findMaximum();
 };
 
 
