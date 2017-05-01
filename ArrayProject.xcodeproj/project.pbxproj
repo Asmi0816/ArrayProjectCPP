@@ -38,6 +38,7 @@
 		F30B7C451E4907F500AF173B /* ArrayController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ArrayController.hpp; path = Controller/ArrayController.hpp; sourceTree = "<group>"; };
 		F30B7C471E490F0900AF173B /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		F30B7C481E490F0900AF173B /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
+		F3255D4B1EB7B24F0097EC2F /* HashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HashTable.h; path = Model/HashTable.h; sourceTree = "<group>"; };
 		F333B45E1E4BA93500AE8CB8 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		F333B45F1E4BA93500AE8CB8 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		F36DD0451E6A02470047D82A /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 				F3803F5C1E7711F1006ED12C /* FoodItem.cpp */,
 				F3803F5D1E7711F1006ED12C /* FoodItem.hpp */,
 				F390A73D1E9FF053009D02D5 /* Trees */,
+				F3255D4B1EB7B24F0097EC2F /* HashTable.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
