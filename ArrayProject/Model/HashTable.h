@@ -24,7 +24,7 @@ private:
     HashNode<Type> ** hashTableStorage;
     bool isPrime(long sampleNumber);
     void resize();
-    long nextPrime(long current);
+    long nextPrime();
     long findPosition(HashNode<Type> * data);
     long handleCollision(HashNode<Type> * data, long currentPosition);
     
@@ -52,6 +52,7 @@ HashTable<Type> :: HashTable()
     this->efficiencyPercentage = .667
     this->size = 0;
     this->hashTableStorage = HashNode<Type> * [capacity];
+    std :: fill_n(hashTableStorage, capacity, nullptr);
 }
 
 template<class Type>
@@ -61,7 +62,7 @@ HashTable<Type> :: ~HashTable()
 }
 ////////////////////////////////////////////////
 template<class Type>
-long HashTable<Type> :: nextPrime(long number)
+long HashTable<Type> :: nextPrime()
 {
     int nextPrime = (this->capacity * 2) +1;
     
