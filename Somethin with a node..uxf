@@ -459,7 +459,7 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1360</x>
+      <x>1350</x>
       <y>1660</y>
       <w>550</w>
       <h>380</h>
@@ -541,11 +541,11 @@ bg=#6634245</panel_attributes>
     <coordinates>
       <x>1090</x>
       <y>2030</y>
-      <w>360</w>
+      <w>350</w>
       <h>200</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>340.0;10.0;10.0;180.0</additional_attributes>
+    <additional_attributes>330.0;10.0;10.0;180.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -588,5 +588,123 @@ bg=red</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>1510</y>
+      <w>340</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>HashNode&lt;Type&gt;
+--
+- data : Type
+- key : long
+--
++ HashNode() : init
++ HashNode(Type data) : init
+
++ getData() : Type
++ const getKey : long
++ setData(Type data)  : void
+bg=#fff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>1460</y>
+      <w>700</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>680.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>1150</y>
+      <w>510</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>Model :: HashTable&lt;Type&gt;
+--
+- capacity : long
+- size : long
+- efficiencyPercentage : double
+- hashTableStorage : HashNode&lt;Type&gt; **
+- isPrime(long sampleNumber) : bool
+- resize() : void
+- nextPrime() : long
+- findPosition(HashNode&lt;Type&gt; * data) : long
+- handleCollision(HashNode&lt;Type&gt; * data, long currentPosition) : long
+
+--
++ HashTable() : init
++ ~HashTable() : deinit
++ add(Type data) : void
++ remove(Type data) : bool
++ displayContents() : void
++ setSize() : long
+bg=#fff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>1450</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1970</x>
+      <y>1660</y>
+      <w>550</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>Model :: Graph&lt;Type&gt;
+--
+- MAXIMUM = 20 : static const int
+- adjacencyMatrix[MAXIMUM][MAXIMUM]: bool 
+- graphData[MAXIMUM] : Type 
+- vertexCount : int 
+- depthFirstTraversal(Graph&lt;Type&gt; graph, int vertex, bool markedVerticies[]) : void
+--
+ + Graph();
+ + ~Graph();
+    
+ + addVertex(const Type&amp; value): void
+ + addEdge(int source, int target): void
+ + removeEdge(int source, int target): void
+ + Type&amp; operator [] (int vertex)
+ + Type operator [] (int vertex) const
+ + size() const : int
+ + areConnected(int source, int target)const : bool
+ + std::set&lt;int&gt; neighbors(int vertex) const : std::set&lt;int&gt;
+ + depthFirstTraversal(Graph&lt;Type&gt; graph, int vertex): void 
+ + breadthFirstTraversal(Graph&lt;Type&gt; graph, int vertex :void 
+
+bg=#f0983</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1440</x>
+      <y>1550</y>
+      <w>550</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;530.0;110.0</additional_attributes>
   </element>
 </diagram>

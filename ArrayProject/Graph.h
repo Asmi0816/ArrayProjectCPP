@@ -18,7 +18,7 @@ class Graph
 {
 private:
     static const int MAXIMUM = 20;
-    bool adjeacentMatrix[MAXIMUM][MAXIMUM];
+    bool adjacencyMatrix[MAXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
     int vertexCount;
     void depthFirstTraversal(Graph<Type> graph, int vertex, bool markedVerticies[]);
@@ -40,5 +40,56 @@ public:
     void depthFirstTraversal(Graph<Type> graph, int vertex);
     void breadthFirstTraversal(Graph<Type> graph, int vertex
 };
+                               
+template<class Type>
+const int Graph<Type> :: MAXIMUM;
+    
+template <class Type>
+Graph<Type> :: GRaph()
+{
+    this->vertexCount = 0;
+}
 
+template <class Type>
+Graph<Type> :: ~Graph()
+{
+    delete [] this->adjacencyMAtrix;
+    delete [] this->graphData;
+}
+    
+template <class Type>
+int Graph<Type> :: size() const
+{
+    return vertexCount;
+}
+template <class Type>
+void Graph<Type> :: addVertex(const Type& value)
+{
+    assert(size() < MAXIMUM);
+    int newVertexNumber = vertexCount;
+    vertexCount++;
+    
+    for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
+    {
+        adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
+        adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
+    }
+    
+    graphData[newVertexNumber] = value;
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 #endif /* Graph_h */
