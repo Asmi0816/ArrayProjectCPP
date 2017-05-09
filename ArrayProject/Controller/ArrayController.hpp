@@ -24,7 +24,8 @@
 #include "../Model/BinarySearchTreeNode.h"
 #include "../Model/Tree.h"
 #include "../Model/BinarySearchTree.h"
-
+#include "../Model/HashTable.h"
+#include "../Model/HashNode.h"
 #include <string>
 
 using namespace std;

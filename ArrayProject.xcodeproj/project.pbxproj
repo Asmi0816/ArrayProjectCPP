@@ -61,6 +61,7 @@
 		F3D4BF8D1E64C72C009BB063 /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
 		F3E067AE1E8C2B9300A5B952 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = Model/CrimeData.cpp; sourceTree = "<group>"; };
 		F3E067B01E8C2B9D00A5B952 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = Model/CrimeData.hpp; sourceTree = "<group>"; };
+		F3F441CF1EC234B4005D0BEC /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +116,8 @@
 				F3803F5C1E7711F1006ED12C /* FoodItem.cpp */,
 				F3803F5D1E7711F1006ED12C /* FoodItem.hpp */,
 				F390A73D1E9FF053009D02D5 /* Trees */,
-				F3255D4B1EB7B24F0097EC2F /* HashTable.h */,
-				F3255D4C1EB7B4E80097EC2F /* HashNode.h */,
+				F3F441CE1EC23487005D0BEC /* Hash */,
+				F3F441CF1EC234B4005D0BEC /* Graph.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -173,6 +174,15 @@
 				F3E067AE1E8C2B9300A5B952 /* CrimeData.cpp */,
 			);
 			name = Crime;
+			sourceTree = "<group>";
+		};
+		F3F441CE1EC23487005D0BEC /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				F3255D4B1EB7B24F0097EC2F /* HashTable.h */,
+				F3255D4C1EB7B4E80097EC2F /* HashNode.h */,
+			);
+			name = Hash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

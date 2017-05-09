@@ -17,12 +17,12 @@ private:
     long key;
     
 public:
-    HashNOde();
+    HashNode();
     HashNode(Type data);
     
     Type getData();
     long getKey() const;
-    void setData(type data);
+    void setData(Type data);
 };
 
 template <class Type>

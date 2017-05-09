@@ -11,7 +11,7 @@
 
 #include <cmath>
 #include <assert.h>
-#include "HashNode.hpp"
+#include "HashNode.h"
 
 using namespace std;
 template<class Type>
@@ -49,9 +49,9 @@ template<class Type>
 HashTable<Type> :: HashTable()
 {
     this->capacity = 101;
-    this->efficiencyPercentage = .667
+    this->efficiencyPercentage = .667;
     this->size = 0;
-    this->hashTableStorage = HashNode<Type> * [capacity];
+    this->hashTableStorage = new HashNode<Type> * [capacity];
     std :: fill_n(hashTableStorage, capacity, nullptr);
 }
 
@@ -102,7 +102,7 @@ bool HashTable<Type> :: isPrime(long candidateNumber)
 }
 
 template<class Type>
-bool HashTable<Type> :: remove()
+bool HashTable<Type> :: remove(Type data)
 {
     bool removed = false;
     HashNode<Type> * find(data);
@@ -172,9 +172,9 @@ void HashTable<Type> :: resize()
         {
             HashNode<Type> * temp =  hashTableStorage[index];
             long position = findPosition(temp);
-            if(tempStoage[position] == nullptr)
+            if(tempStorage[position] == nullptr)
             {
-                tempStoage[position] = temp;
+                tempStorage[position] = temp;
             }
             else
             {
@@ -195,7 +195,7 @@ void HashTable<Type> :: add(Type data)
     {
         resize();
     }
-    HashNode<Type> * temp = new HashNode<Temp>(data);
+    HashNode<Type> * temp = new HashNode<Type>(data);
     long index = findPosition(temp);
     if( hashTableStorage[index] == nullptr)
     {
@@ -204,7 +204,7 @@ void HashTable<Type> :: add(Type data)
     else
     {
         long updatedPosition = handleCollision(temp, index);
-        hashTableStorage[index] = temp;
+        hashTableStorage[updatedPosition] = temp;
     }
 }
 #endif /* HashTable_h */
