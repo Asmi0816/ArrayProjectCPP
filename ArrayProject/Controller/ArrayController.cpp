@@ -467,7 +467,7 @@ void ArrayController :: graphTest()
     connectedLife.addEdge(9,11);
     connectedLife.addEdge(11,10);
     connectedLife.addEdge(0,10);
-    
+
     connectedLife.breadthFirstTraversal(connectedLife, 0);
     connectedLife.depthFirstTraversal(connectedLife, 0);
 
