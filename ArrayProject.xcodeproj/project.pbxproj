@@ -179,8 +179,8 @@
 		F3F441CE1EC23487005D0BEC /* Hash */ = {
 			isa = PBXGroup;
 			children = (
-				F3255D4B1EB7B24F0097EC2F /* HashTable.h */,
 				F3255D4C1EB7B4E80097EC2F /* HashNode.h */,
+				F3255D4B1EB7B24F0097EC2F /* HashTable.h */,
 			);
 			name = Hash;
 			sourceTree = "<group>";

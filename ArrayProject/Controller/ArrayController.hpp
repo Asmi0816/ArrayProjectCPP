@@ -48,6 +48,7 @@ private:
     void testBinarySearchData();
     void testAVLTreeOperations();
     void testAVLData();
+    void graphTest();
     
 public:
     ArrayController();

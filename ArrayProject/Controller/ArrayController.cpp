@@ -48,6 +48,7 @@ void ArrayController :: start()
     testFoodQueue();
     testIntStack();
     testBinarySearchTreeOperations();
+    graphTest();
     
     
 }
@@ -379,3 +380,96 @@ void ArrayController :: testAVLData()
     treeTimer.displayTimerInformation();
     
 }
+
+void ArrayController :: graphTest()
+{
+    Graph<string> connectedLife;
+    connectedLife.addVertex("Arick");
+    connectedLife.addVertex("Mom");
+    connectedLife.addVertex("Dad");
+    connectedLife.addVertex("Sean");
+    connectedLife.addVertex("Luke");
+    connectedLife.addVertex("Marc");
+    connectedLife.addVertex("Chewy");
+    connectedLife.addVertex("Food");
+    connectedLife.addVertex("Cooking");
+    connectedLife.addVertex("Games");
+    connectedLife.addVertex("Computer Programming");
+    connectedLife.addVertex("Game Dev");
+    connectedLife.addVertex("Hiking");
+    
+    connectedLife.addEdge(0,1);
+    connectedLife.addEdge(0,2);
+    connectedLife.addEdge(0,3);
+    connectedLife.addEdge(0,4);
+    connectedLife.addEdge(0,5);
+    connectedLife.addEdge(0,6);
+    connectedLife.addEdge(0,7);
+    connectedLife.addEdge(0,12);
+    
+    connectedLife.addEdge(1,0);
+    connectedLife.addEdge(1,2);
+    connectedLife.addEdge(1,3);
+    connectedLife.addEdge(1,4);
+    connectedLife.addEdge(1,5);
+    connectedLife.addEdge(1,6);
+    connectedLife.addEdge(1,7);
+    
+    connectedLife.addEdge(2,0);
+    connectedLife.addEdge(2,1);
+    connectedLife.addEdge(2,3);
+    connectedLife.addEdge(2,4);
+    connectedLife.addEdge(2,5);
+    connectedLife.addEdge(2,6);
+    connectedLife.addEdge(2,7);
+    
+    connectedLife.addEdge(3,0);
+    connectedLife.addEdge(3,1);
+    connectedLife.addEdge(3,2);
+    connectedLife.addEdge(3,4);
+    connectedLife.addEdge(3,5);
+    connectedLife.addEdge(3,6);
+    connectedLife.addEdge(3,7);
+    
+    connectedLife.addEdge(4,0);
+    connectedLife.addEdge(4,1);
+    connectedLife.addEdge(4,2);
+    connectedLife.addEdge(4,3);
+    connectedLife.addEdge(4,5);
+    connectedLife.addEdge(4,6);
+    connectedLife.addEdge(4,7);
+    
+    connectedLife.addEdge(5,0);
+    connectedLife.addEdge(5,1);
+    connectedLife.addEdge(5,2);
+    connectedLife.addEdge(5,3);
+    connectedLife.addEdge(5,4);
+    connectedLife.addEdge(5,6);
+    connectedLife.addEdge(5,7);
+    
+    connectedLife.addEdge(6,0);
+    connectedLife.addEdge(6,1);
+    connectedLife.addEdge(6,2);
+    connectedLife.addEdge(6,3);
+    connectedLife.addEdge(6,4);
+    connectedLife.addEdge(6,5);
+    connectedLife.addEdge(6,7);
+    connectedLife.addEdge(6,12);
+    
+    connectedLife.addEdge(7,8);
+    
+    connectedLife.addEdge(0,9);
+    connectedLife.addEdge(2,9);
+    connectedLife.addEdge(3,9);
+    connectedLife.addEdge(4,9);
+    connectedLife.addEdge(5,9);
+    
+    connectedLife.addEdge(9,11);
+    connectedLife.addEdge(11,10);
+    connectedLife.addEdge(0,10);
+    
+    connectedLife.breadthFirstTraversal(connectedLife, 0);
+    connectedLife.depthFirstTraversal(connectedLife, 0);
+
+}
+

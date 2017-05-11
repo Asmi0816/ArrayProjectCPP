@@ -54,8 +54,7 @@ Graph<Type> :: Graph()
 template <class Type>
 Graph<Type> :: ~Graph()
 {
-    delete [] this->adjacencyMAtrix;
-    delete [] this->graphData;
+    
 }
 
 template <class Type>
@@ -209,7 +208,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> currentGraph, int vertex)
         {
             if(!visited[*setIterator])
             {
-                visited[*setIterator];
+                visited[*setIterator] = true;
                 cout<< currentGraph[*setIterator]<< endl;
                 vertexQueue.push(*setIterator);
             }
